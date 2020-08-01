@@ -6,11 +6,19 @@
     width: 270px;
     height: 220px;
     background-color: #fff;
+    @media (orientation:landscape) {
+        bottom: 5px;
+        height: 155px;
+    }
     .hotel-image {
         position: absolute;
         top: 20px;
         left: 20px;
         clip: rect(0, 90px, 135px, 0);
+        @media (orientation:landscape) {
+            top: 10px;
+            clip: rect(0, 90px, 100px, 0);
+        }
     }
     .details {
         font-family: sans-serif;
@@ -19,10 +27,17 @@
         height: 135px;
         padding-top: 20px;
         position: relative;
+        @media (orientation:landscape) {
+            height: 100px;
+            padding-top: 10px;
+        }
         .hotel-name {
             display: block;
             padding-bottom: 20px;
             font-size: 14px;
+            @media (orientation:landscape) {
+                padding-bottom: 5px;
+            }
         }
         .distance {
             font-family: monospace;
@@ -47,5 +62,8 @@
         font-family: sans-serif;
         line-height: 35px;
         color: #fff;
+        @media (orientation:landscape) {
+            bottom: 5px;
+        }
     }
 }
